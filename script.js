@@ -75,7 +75,7 @@ if (mapBox && mapButton) {
     mapBox.classList.add('show');
     mapBox.innerHTML =
       '<iframe title="Cafe Pink on Google Maps" ' +
-      'src="https://www.google.com/maps?q=Cafe+Pink+Hauz+Khas+Village+New+Delhi&output=embed" ' +
+            'src="https://maps.google.com/maps?q=Cafe+Pink,+Hauz+Khas+Village,+New+Delhi&z=16&hl=en&output=embed" ' +
       'allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>';
   });
 }

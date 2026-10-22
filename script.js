@@ -19,7 +19,6 @@ if (!reduceMotion && 'IntersectionObserver' in window) {
     '.why .img-card', '.contact-card', '.contact-buttons',
     '.visit-text', '.visit-photos img', '.map'
   ];
-  // On phones the highlight cards are a carousel, so they don't fade in
   if (!isMobile) selectors.push('.highlights .img-card');
 
   const observer = new IntersectionObserver((entries) => {
@@ -65,4 +64,18 @@ if (carousel) {
   carousel.addEventListener('scroll', () => requestAnimationFrame(setActive), { passive: true });
   window.addEventListener('resize', setActive);
   setActive();
+}
+
+// ---------- Load the map only when tapped ----------
+const mapBox = document.getElementById('map');
+const mapButton = mapBox ? mapBox.querySelector('.map-load') : null;
+
+if (mapBox && mapButton) {
+  mapButton.addEventListener('click', () => {
+    mapBox.classList.add('show');
+    mapBox.innerHTML =
+      '<iframe title="Cafe Pink on Google Maps" ' +
+      'src="https://www.google.com/maps?q=Cafe+Pink+Hauz+Khas+Village+New+Delhi&output=embed" ' +
+      'allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>';
+  });
 }

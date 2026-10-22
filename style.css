@@ -498,3 +498,4 @@ section { scroll-margin-top: 70px; }
   .hero-content > *, .menu-item { animation: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+.map-link { margin-top: 18px; }

@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cafe Pink | Hauz Khas Village, New Delhi</title>
   <meta name="description" content="Cafe Pink in Hauz Khas Village, New Delhi. Lakeside views, rooftop seating, coffee, mocktails, tandoor and more.">
+  <link rel="preload" as="image" href="images/hero.jpg" fetchpriority="high">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600;1,700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -39,7 +43,8 @@
   <!-- Menu highlights -->
   <section id="menu" class="section">
     <h2 class="section-title">Menu Highlights</h2>
-    <p class="section-sub">A few favourites from our kitchen and bar.</p>
+    <br>
+    <p class="swipe-hint">Swipe to explore →</p>
 
     <div class="card-grid highlights">
       <div class="img-card">
@@ -159,7 +164,13 @@
 
   <!-- Floating WhatsApp button -->
   <a href="https://wa.me/919667735763" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">💬</a>
-
+  <!-- Mobile bottom bar -->
+  <nav class="bottom-nav" aria-label="Quick links">
+    <a href="index.html" class="active"><span>🏠</span>Home</a>
+    <a href="menu.html"><span>🍽️</span>Menu</a>
+    <a href="https://www.zomato.com/ncr/cafe-pink-1-hauz-khas-village-new-delhi/book" target="_blank" rel="noopener"><span>📅</span>Book</a>
+    <a href="tel:+919667735763"><span>📞</span>Call</a>
+  </nav>
   <script src="script.js"></script>
 </body>
 </html>
